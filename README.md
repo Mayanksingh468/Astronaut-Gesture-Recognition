@@ -1,15 +1,5 @@
 # 🚀 Astronaut Hand Gesture Recognition using Transfer Learning
 
-A deep learning project that compares multiple transfer learning architectures for static hand gesture recognition and deploys the best-performing model as an interactive web application.
-
-## 🌐 Live Demo
-
-Try the deployed application here:
-
-**https://astronaut-gesture-recognition-7fn9jedfuqsv4muqrynmtr.streamlit.app/**
-
----
-
 ## 📌 Project Overview
 
 Hand gesture recognition can provide an intuitive communication interface in environments where traditional input devices are impractical. Inspired by astronaut communication systems, this project investigates the effectiveness of transfer learning architectures for recognizing static hand gestures.
@@ -86,7 +76,7 @@ Models were compared using:
 | -------------- | ------------------- | ------------- |
 | ResNet50       | 80.98%              | 80.11%        |
 | MobileNetV2    | 75.76%              | 75.48%        |
-| EfficientNetB0 | **98.81%**          | **98.87%**    |
+| EfficientNetB0 | **90.81%**          | **89.87%**    |
 
 ---
 
@@ -96,8 +86,8 @@ Models were compared using:
 
 Results achieved:
 
-* Validation Accuracy: **98.81%**
-* Test Accuracy: **98.87%**
+* Validation Accuracy: **90.81%**
+* Test Accuracy: **89.87%**
 * Highest overall performance among all evaluated architectures
 
 EfficientNetB0 demonstrated superior feature extraction capability while maintaining computational efficiency, making it the final model selected for deployment.
