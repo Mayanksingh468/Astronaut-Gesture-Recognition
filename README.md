@@ -1,109 +1,217 @@
-# Astronaut-Gesture-Recognition
-# 🚀 Comparative Analysis of Transfer Learning Architectures for Astronaut Hand Gesture Recognition
+# 🚀 Astronaut Hand Gesture Recognition using Transfer Learning
 
-## Project Overview
+A deep learning project that compares multiple transfer learning architectures for static hand gesture recognition and deploys the best-performing model as an interactive web application.
 
-This project explores transfer learning for static hand gesture recognition inspired by astronaut command systems.
+## 🌐 Live Demo
 
-Three state-of-the-art CNN architectures were evaluated:
+Try the deployed application here:
 
-- ResNet50
-- MobileNetV2
-- EfficientNetB0
-
-The models were trained on the ASL Alphabet Dataset containing approximately 87,000 gesture images across 29 classes.
-
-## Key Findings
-
-- EfficientNetB0 achieved the best overall performance.
-- Achieved 98.87% test accuracy on 29 gesture classes.
-- Transfer learning significantly reduced training time.
-- EfficientNetB0 outperformed both ResNet50 and MobileNetV2.
-
-## Project Notebook
-
-The complete implementation can be found here:
-
-- notebooks/ASL_Gesture_Recognition.ipynb
+**https://astronaut-gesture-recognition-7fn9jedfuqsv4muqrynmtr.streamlit.app/**
 
 ---
 
-## Dataset
+## 📌 Project Overview
 
-Dataset: ASL Alphabet Dataset
+Hand gesture recognition can provide an intuitive communication interface in environments where traditional input devices are impractical. Inspired by astronaut communication systems, this project investigates the effectiveness of transfer learning architectures for recognizing static hand gestures.
 
-- 87,000 Images
-- 29 Classes
-- Static Hand Gestures
-- RGB Images
-- Resolution: 224 × 224
+Three popular CNN architectures were evaluated:
 
----
+* ResNet50
+* MobileNetV2
+* EfficientNetB0
 
-## Methodology
-
-1. Data preprocessing
-2. Image augmentation
-3. Transfer learning
-4. Fine-tuning
-5. Model comparison
-6. Performance evaluation
+The models were trained and fine-tuned on the ASL Alphabet Dataset containing approximately 87,000 images across 29 gesture classes.
 
 ---
 
-## Model Performance
+## 🎯 Objectives
 
-| Model | Validation Accuracy | Test Accuracy |
-|---------|-------------------|---------      |
-| ResNet50 | 80.98%           | 80.11%        |
-| MobileNetV2 | 75.76%        | 75.48%        |
-| EfficientNetB0 | **98.81%** | **98.87%**    |
-
----
-
-## Best Model
-
-EfficientNetB0 achieved the highest performance:
-
-- Test Accuracy: 98.87%
+* Compare the performance of modern transfer learning architectures.
+* Evaluate their effectiveness on large-scale hand gesture classification.
+* Fine-tune the best-performing model.
+* Deploy the final model as an interactive web application.
 
 ---
 
-## Confusion Matrix
+## 📂 Dataset
+
+**ASL Alphabet Dataset**
+
+Dataset Characteristics:
+
+* ~87,000 RGB Images
+* 29 Gesture Classes
+* Static Hand Gestures
+* Image Resolution: 224 × 224
+* Balanced Class Distribution
+
+---
+
+## ⚙️ Methodology
+
+### 1. Data Preprocessing
+
+* Image resizing
+* Normalization
+* Train-validation-test split
+
+### 2. Data Augmentation
+
+* Rotation
+* Horizontal shifting
+* Zooming
+* Flipping
+
+### 3. Transfer Learning
+
+Pre-trained ImageNet weights were used to accelerate convergence and improve generalization.
+
+### 4. Fine-Tuning
+
+The top layers of each architecture were fine-tuned on the gesture dataset.
+
+### 5. Evaluation
+
+Models were compared using:
+
+* Validation Accuracy
+* Test Accuracy
+* Confusion Matrix Analysis
+
+---
+
+## 📊 Model Performance
+
+| Model          | Validation Accuracy | Test Accuracy |
+| -------------- | ------------------- | ------------- |
+| ResNet50       | 80.98%              | 80.11%        |
+| MobileNetV2    | 75.76%              | 75.48%        |
+| EfficientNetB0 | **98.81%**          | **98.87%**    |
+
+---
+
+## 🏆 Best Performing Model
+
+### EfficientNetB0
+
+Results achieved:
+
+* Validation Accuracy: **98.81%**
+* Test Accuracy: **98.87%**
+* Highest overall performance among all evaluated architectures
+
+EfficientNetB0 demonstrated superior feature extraction capability while maintaining computational efficiency, making it the final model selected for deployment.
+
+---
+
+## 💻 Deployed Application
+
+The best-performing EfficientNetB0 model was deployed using Streamlit to provide real-time gesture prediction.
+
+### Features
+
+* Upload hand gesture images
+* Real-time predictions
+* Confidence score display
+* Top-3 prediction probabilities
+* Cloud deployment using Streamlit
+
+---
+
+## 📸 Application Preview
+
+### Home Page
+
+(Add Screenshot Here)
+
+### Prediction Example
+
+(Add Screenshot Here)
+
+---
+
+## 📈 Confusion Matrix
 
 ![Confusion Matrix](images/efficientnet_confusion_matrix.png)
 
 ---
-## Repository
 
-GitHub Repository:
+## 🛠️ Technologies Used
+
+### Machine Learning & Deep Learning
+
+* TensorFlow
+* Keras
+* Transfer Learning
+
+### Data Processing
+
+* NumPy
+* Pandas
+
+### Visualization
+
+* Matplotlib
+* Seaborn
+
+### Deployment
+
+* Streamlit
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+## 📁 Repository Structure
+
+```text
+Astronaut-Gesture-Recognition/
+│
+├── app/
+│   ├── app.py
+│   └── efficientnetb0_finetuned.keras
+│
+├── notebooks/
+│   └── ASL_Gesture_Recognition.ipynb
+│
+├── images/
+│   └── efficientnet_confusion_matrix.png
+│
+├── requirements.txt
+├── runtime.txt
+└── README.md
+```
+
+---
+
+## 🔬 Key Insights
+
+* Transfer learning significantly reduced training time.
+* EfficientNetB0 achieved substantially higher accuracy than ResNet50 and MobileNetV2.
+* Fine-tuning improved model generalization on unseen gesture images.
+* Deployment demonstrated the practical applicability of the trained model.
+
+---
+
+## 🚀 Future Improvements
+
+* Grad-CAM Visualizations
+* Real-Time Webcam Gesture Recognition
+* Dynamic Gesture Recognition
+* Model Quantization for Edge Deployment
+* Support for Custom Gesture Datasets
+
+---
+
+## 👨‍💻 Author
+
+Mayank Singh
+
+GitHub:
+https://github.com/Mayanksingh468
+
+Project Repository:
 https://github.com/Mayanksingh468/Astronaut-Gesture-Recognition
-
-
-## Research Motivation
-
-Hand gesture recognition systems can provide an intuitive communication interface for astronauts operating in constrained environments where traditional input devices may be impractical.
-
-This project investigates the effectiveness of transfer learning architectures for static gesture recognition and compares their performance on a large-scale gesture dataset.
-
-
-## Technologies Used
-
-- Python
-- TensorFlow / Keras
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-
----
-
-## Future Work
-
-- Grad-CAM Visualization
-- Real-Time Webcam Gesture Recognition
-- Streamlit Deployment
-- Dynamic Gesture Recognition
-
----
