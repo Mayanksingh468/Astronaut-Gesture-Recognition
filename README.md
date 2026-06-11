@@ -74,6 +74,18 @@ EfficientNetB0 achieved the highest performance:
 ![Confusion Matrix](images/efficientnet_confusion_matrix.png)
 
 ---
+## Repository
+
+GitHub Repository:
+https://github.com/Mayanksingh468/Astronaut-Gesture-Recognition
+
+
+## Research Motivation
+
+Hand gesture recognition systems can provide an intuitive communication interface for astronauts operating in constrained environments where traditional input devices may be impractical.
+
+This project investigates the effectiveness of transfer learning architectures for static gesture recognition and compares their performance on a large-scale gesture dataset.
+
 
 ## Technologies Used
 
