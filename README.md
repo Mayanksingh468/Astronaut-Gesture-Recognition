@@ -13,6 +13,12 @@ Three state-of-the-art CNN architectures were evaluated:
 
 The models were trained on the ASL Alphabet Dataset containing approximately 87,000 gesture images across 29 classes.
 
+## Project Notebook
+
+The complete implementation can be found here:
+
+- notebooks/ASL_Gesture_Recognition.ipynb
+
 ---
 
 ## Dataset
@@ -39,10 +45,10 @@ ASL Alphabet Dataset
 ## Model Performance
 
 | Model | Validation Accuracy | Test Accuracy |
-|---------|---------|---------|
-| ResNet50 | 80.98% | 80.11% |
-| MobileNetV2 | 75.76% | 75.48% |
-| EfficientNetB0 | **98.81%** | **98.87%** |
+|---------|-------------------|---------      |
+| ResNet50 | 80.98%           | 80.11%        |
+| MobileNetV2 | 75.76%        | 75.48%        |
+| EfficientNetB0 | **98.81%** | **98.87%**    |
 
 ---
 
