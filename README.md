@@ -13,6 +13,13 @@ Three state-of-the-art CNN architectures were evaluated:
 
 The models were trained on the ASL Alphabet Dataset containing approximately 87,000 gesture images across 29 classes.
 
+## Key Findings
+
+- EfficientNetB0 achieved the best overall performance.
+- Achieved 98.87% test accuracy on 29 gesture classes.
+- Transfer learning significantly reduced training time.
+- EfficientNetB0 outperformed both ResNet50 and MobileNetV2.
+
 ## Project Notebook
 
 The complete implementation can be found here:
@@ -23,11 +30,13 @@ The complete implementation can be found here:
 
 ## Dataset
 
-ASL Alphabet Dataset
+Dataset: ASL Alphabet Dataset
 
-- Total Images: 87,000
-- Classes: 29
-- Image Size: 224 × 224
+- 87,000 Images
+- 29 Classes
+- Static Hand Gestures
+- RGB Images
+- Resolution: 224 × 224
 
 ---
 
