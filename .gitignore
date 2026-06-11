@@ -1,0 +1,6 @@
+models/
+*.keras
+
+.DS_Store
+
+.ipynb_checkpoints/
